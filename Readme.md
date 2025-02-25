@@ -2,7 +2,7 @@
 
 * Студент: [Василий Веркин](https://up.htmlacademy.ru/htmlcss-individual/2/user/2092395).
 * Наставник: [Кенан Агаев](https://htmlacademy.ru/profile/kenakula).
-
+* Сайт: [Проект Седона](https://vverkin.github.io/2092395-sedona-2).
 ---
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>
