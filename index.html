@@ -2,12 +2,14 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
     <title>HTML Academy: Седона</title>
   </head>
   <body>
-    <header class="page-header">
+    <header class="page-header" data-test="header">
       <a class="navigation-logo" href="index.html" aria-current="page" >
-        <img class="logo" src="#" alt="Логотип города Седона">
+        <img class="logo" src="images/logo.svg" width="140" height="70" alt="Логотип с надписью city of sedona и изображением моста над каньоном">
       </a>
       <nav class="navigation">
         <ul class="navigation-list">
@@ -53,20 +55,20 @@
         </ul>
       </nav>
     </header>
-    <main class="main-index">
-      <h1 class="visually-hidden">Сайт бронирования туров в город Седона</h1>
-      <section class="hero">
-        <img class="welcom" src="#" alt="Картинка с надписью добро пожаловать в великолепную Седону">
+    <main class="main-index" data-test="main">
+      <section class="hero" data-test="hero">
+        <h1 class="visually-hidden">Сайт бронирования туров в город Седона</h1>
+        <img class="welcom" src="images/welcome.svg" width="458" height="352" alt="Надпись добро пожаловать в великолепную Седону">
         <p class="hero-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
         <p class="hero-description">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
       </section>
-      <section class="advantages">
+      <section class="advantages" data-test="advantages">
         <h2 class="visually-hidden">Преимущества Седоны</h2>
         <ul class="advantages-list">
           <li class="advantages-item">
             <h3 class="advantages-title">Настоящий городок</h3>
             <p class="advantages-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
-            <img class="advantages-img" src="#" alt="Фотография зданий городка">
+            <img class="advantages-img" src="images/town.jpg" width="800" height="358" alt="Здания городка">
           </li>
           <li class="advantages-item">
             <h3 class="advantages-title">Небольшая площадь</h3>
@@ -83,7 +85,7 @@
           <li class="advantages-item">
             <h3 class="advantages-title">Там есть мост дьявола</h3>
             <p class="advantages-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
-            <img class="advantages-img" src="#" alt="Фотография скалы">
+            <img class="advantages-img" src="images/canyon.jpg" width="800" height="358" alt="Каньон и скалы">
           </li>
         </ul>
       </section>
@@ -105,23 +107,23 @@
           </li>
         </ul>
       </section>
-      <section class="search">
+      <section class="search" data-test="search">
         <h2 class="visually-hidden">Поиск гостиницы в Седоне</h2>
         <p class="search-title">Заинтересовались?</p>
         <p class="search-description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
         <a class="button button-all" href="#">Поиск гостиницы в Седоне</a>
       </section>
-      <section class="subscribe">
+      <section class="subscribe" data-test="subscribe">
         <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
         <p class="subscribe-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="subscribe-form" action="https://echo.htmlacademy.ru" method="post">
           <label class="visually-hidden" for="subscribe-email">Укажите Ваш email</label>
-          <input type="email" id="subscribe-email" name="user-email" placeholder="Ваш e-mail">
+          <input type="email" id="subscribe-email" name="user-email" placeholder="Ваш e-mail" required>
           <button class="button button-subscribe" type="submit">Подписаться</button>
         </form>
       </section>
     </main>
-    <footer class="page-footer">
+    <footer class="page-footer" data-test="footer">
       <ul class="social-list">
         <li class="social-item">
           <a class="social-link" href="https://vk.com/htmlacademy" target="_blank" rel="noreferrer noopener">

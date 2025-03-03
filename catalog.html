@@ -2,12 +2,14 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
     <title>Гостиницы</title>
   </head>
   <body>
     <header class="inner-header">
       <a class="navigation-logo" href="index.html">
-        <img class="logo" src="#" alt="Логотип города Седона">
+        <img class="logo" src="images/logo.svg" alt="Логотип с надписью city of sedona и изображением моста над каньоном">
       </a>
       <nav class="navigation">
         <ul class="navigation-list">
@@ -59,7 +61,7 @@
           </li>
         </ul>
       </header>
-      <section class="catalog-hotels">
+      <section class="catalog-hotels" data-test="filter">
         <h2 class="visually-hidden">Список гостиниц с фильтрами</h2>
         <form class="hotels-filter-form" action="https://echo.htmlacademy.ru" method="get">
           <fieldset class="hotels-filter-group">
@@ -79,7 +81,6 @@
                     <input class="control-input" type="checkbox" name="wifi">Wi-Fi
                   </label>
                 </li>
-              </li>
             </ul>
           </fieldset>
           <fieldset class="hotels-filter-group">
@@ -99,7 +100,6 @@
                     <input class="control-input" type="radio" name="hotel-type">Апартаменты
                   </label>
                 </li>
-              </li>
             </ul>
           </fieldset>
           <fieldset class="hotels-filter-group">
@@ -146,10 +146,10 @@
           </li>
         </ul>
       </div>
-      <ul class="hotel-list">
+      <ul class="hotel-list" data-test="catalog">
         <li class="hotel-card">
           <a class="hotel-card-link" href="#">
-            <img class="hotel-card-image" src="#" alt="Фотогафия гостиницы">
+            <img class="hotel-card-image" src="images/amara.jpg" width="300" height="212" alt="Вид на звездное небо через ущелье">
             <h3 class="hotel-card-title" lang="en">Amara Resort & Spa</h3>
           </a>
           <p class="hotel-type">Гостиница</p>
@@ -161,7 +161,7 @@
         </li>
         <li class="hotel-card">
           <a class="hotel-card-link" href="#">
-            <img class="hotel-card-image" src="#" alt="Фотогафия гостиницы">
+            <img class="hotel-card-image" src="images/villas.jpg" width="300" height="212" alt="Тучи и радуга над скалами">
             <h3 class="hotel-card-title" lang="en">Villas at Poco Diablo</h3>
           </a>
           <p class="hotel-type">Гостиница</p>
@@ -173,7 +173,7 @@
         </li>
         <li class="hotel-card">
           <a class="hotel-card-link" href="#">
-            <img class="hotel-card-image" src="#" alt="Фотогафия гостиницы">
+            <img class="hotel-card-image" src="images/desert.jpg" width="300" height="212" alt="Скалы на фоне ясого неба">
             <h3 class="hotel-card-title" lang="en">Desert Quail Inn</h3>
           </a>
           <p class="hotel-type">Гостиница</p>
@@ -185,7 +185,7 @@
         </li>
         <li class="hotel-card">
           <a class="hotel-card-link" href="#">
-            <img class="hotel-card-image" src="#" alt="Фотогафия гостиницы">
+            <img class="hotel-card-image" src="images/greentree.jpg" width="300" height="212" alt="Скалы на фоне звездного неба">
             <h3 class="hotel-card-title" lang="en">GreenTree Inn</h3>
           </a>
           <p class="hotel-type">Гостиница</p>
@@ -222,7 +222,7 @@
         <p class="subscribe-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="subscribe-form" action="https://echo.htmlacademy.ru" method="post">
           <label class="visually-hidden" for="subscribe-email">Укажите Ваш email</label>
-          <input type="email" id="subscribe-email" name="user-email" placeholder="Ваш e-mail">
+          <input type="email" id="subscribe-email" name="user-email" placeholder="Ваш e-mail" required>
           <button class="button button-subscribe" type="submit">Подписаться</button>
         </form>
       </section>
@@ -253,7 +253,11 @@
         </li>
       </ul>
       <a class="contact" href="tel:+78128121212">+7 (812) 812-12-12</a>
-      <a class="author-logo" href="https://htmlacademy.ru/">.html academy</a>
+      <a class="author-logo" href="https://htmlacademy.ru/">
+        <span class="visually-hidden">
+          Ссылка на сайт htmlacademy
+        </span>
+      </a>
     </footer>
   </body>
 </html>
