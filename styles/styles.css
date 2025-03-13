@@ -2,7 +2,7 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
-  src: URL("../fonts/ptsans-400.woff2") format("woff2");
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -10,16 +10,75 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
-  src: URL("../fonts/ptsans-700.woff2") format("woff2");
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
   font-display: swap;
 }
 
+html {
+  box-sizing: border-box;
+  position: relative;
+  scroll-behavior: smooth;
+}
+
 body {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 22px;
+  font-weight: 400;
   line-height: 26px;
   color:  #000;
   background-color: #f2f2f2;
+  margin: 0;
+}
+
+img, svg {
+  max-width: 100%;
+  height: auto;
+}
+
+svg {
+  display: block;
+}
+
+.navigation-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation-link {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  color:  #000;
+  text-decoration: none;
+}
+
+.button {
+  border-radius: 4px;
+  padding: 8px;
+  min-width: 161px;
+  height: 36px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 36px;
+  text-transform: uppercase;
+  background-color: #756157;
+  border: none;
+}
+
+.button:hover {
+  background-color:  #615048;
+}
+
+.button:focus {
+  background-color:  #615048;
+  outline: none;
+}
+
+.button:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color:  #756157;
 }
 
 .hero {
@@ -27,4 +86,13 @@ body {
   background-size: 100% auto, cover;
   background-repeat: no-repeat;
   background-position: left bottom, left top;
+  background-color: #cae1ef;
+
+  max-width: 1200px;
+  min-height: 485px;
+}
+
+.welcom {
+  display: block;
+  margin: 0 auto;
 }
