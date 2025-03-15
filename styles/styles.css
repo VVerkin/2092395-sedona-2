@@ -26,6 +26,12 @@ img, svg {
   height: auto;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 body {
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 22px;
@@ -256,5 +262,69 @@ fieldset {
 }
 
 .subscribe-title {
+  padding: 96px 0 0;
+}
 
+.subscribe-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 20px;
+  color:#fff;
+}
+
+.subscribe-description {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 54px;
+}
+
+.subscribe-form {
+  display:flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.subscribe-form-input {
+  min-width: 452px;
+  padding: 12px 0 12px 20px;
+  margin: 0;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  color:  #000;
+  border: none;
+}
+
+.button-subscribe {
+  border-radius: 0 4px 4px 0;
+  padding: 8px 50px;
+  width: 232px;
+  height: 52px;
+  border: none;
+  background-color: #82b3d3;
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+}
+
+.button-subscribe:hover {
+  background-color: #68a2ca;
+}
+
+.button-subscribe:focus {
+  background-color: #68a2ca;
+}
+
+.button-subscribe:active {
+  rgba(255, 255, 255, 0.3);
 }
