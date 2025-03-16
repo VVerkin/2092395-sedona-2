@@ -8,8 +8,8 @@
     <title>HTML Academy: Седона</title>
   </head>
   <body>
-    <header class="page-header" data-test="header">
-      <div class="container">
+    <div class="wrapper">
+      <header class="page-header" data-test="header">
         <nav class="navigation">
           <a class="navigation-logo" href="index.html" aria-current="page" >
             <img class="logo" src="images/logo.svg" width="140" height="70" alt="Логотип с надписью city of sedona и изображением моста над каньоном">
@@ -56,10 +56,8 @@
             </li>
           </ul>
         </nav>
-      </div>
-    </header>
-    <main class="main-index" data-test="main">
-      <div class="container">
+      </header>
+      <main class="main-index" data-test="main">
         <section class="hero" data-test="hero">
           <h1 class="visually-hidden">Сайт бронирования туров в город Седона</h1>
           <img class="welcom" src="images/welcome.svg" width="458" height="352" lang="en" alt="Welcome to the gorgeous Sedona, because the Grand Canyon sucks!">
@@ -130,10 +128,8 @@
             <button class="button button-subscribe" type="submit">Подписаться</button>
           </form>
         </section>
-      </div>
-    </main>
-    <footer class="page-footer" data-test="footer">
-      <div class="container flex">
+      </main>
+      <footer class="page-footer flex" data-test="footer">
         <ul class="social-list">
           <li class="social-item">
             <a class="social-link" href="https://vk.com/htmlacademy" target="_blank" rel="noreferrer noopener" aria-label="Ссылка на страницу htmlacademy во Вконтакте">
@@ -175,7 +171,7 @@
             Ссылка на сайт htmlacademy
           </span>
         </a>
-      </div>
-    </footer>
+      </footer>
+    </div>
   </body>
 </html>
