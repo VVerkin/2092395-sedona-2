@@ -82,14 +82,12 @@ fieldset {
   border:0 none;
 }
 
-.container {
+.wrapper {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0;
   background-color: #ffffff;
-  box-shadow:
-  -10px 0 10px -5px rgba(0, 0, 0, 0.2),
-  10px 0 10px -5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
 }
 
 .flex {
@@ -424,4 +422,49 @@ fieldset {
 
 .author-logo:active {
   opacity: 0.3;
+}
+
+.catalog-hotels-filter {
+  background-image: url("../images/backgrounds/catalog-hotels-bg.jpg");
+  background-repeat: no-repeat;
+  background-color: #cae1ef;
+  max-width: 1200px;
+  min-height: 412px;
+  padding: 35px 70px;
+}
+
+.catalog-hotels-title {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 78px;
+  color: #fff;
+}
+
+.breadcrumbs {
+  display: flex;
+  margin-bottom: 40px;
+}
+
+.breadcrumbs-item {
+  font-size: 16px;
+  line-height: 21px;
+  color: #fff;
+}
+
+.hotels-filter-form {
+  display: flex;
+}
+
+.hotels-filter-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #fff;
+}
+
+.hotels-filter-item {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  color: #fff;
 }
