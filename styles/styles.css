@@ -42,8 +42,79 @@ body {
   margin: 0;
 }
 
-button {
+.button {
+  font-family: inherit;
+  border-radius: 4px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  border: none;
   cursor: pointer;
+}
+
+.button:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.button-brown {
+  background-color: #756157;
+}
+
+.button-brown:hover {
+  background-color: #615048;
+  }
+
+.button-brown:focus {
+  background-color: #615048;
+  }
+
+.button-brown:active {
+  background-color: #756157;
+  }
+
+.button-blue {
+  background-color: #82b3d3;
+  }
+
+.button-blue:hover {
+  background-color: #68a2ca;
+  }
+
+.button-blue:focus {
+  background-color: #68a2ca;
+  }
+
+.button-blue:active {
+  background-color: #82b3d3;
+  }
+
+.button-green {
+  background-color: #7db54f;
+}
+
+.button-green:hover {
+  background-color: #6c9e42;
+}
+
+.button-green:focus {
+  background-color: #6c9e42;
+}
+
+.button-green:active {
+  background-color: #7db54f;
+}
+
+.button-transparent {
+  border: 3px solid transparent;
+  background-color: transparent;
+  outline: none;
+}
+
+.button-transparent:focus {
+  border: 3px solid #83b3d3;
 }
 
 a {
@@ -136,31 +207,6 @@ fieldset {
   padding: 8px 34px;
 }
 
-.button {
-  border-radius: 4px;
-  color: #fff;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 36px;
-  text-transform: uppercase;
-  background-color: #756157;
-  border: none;
-}
-
-.button:hover {
-  background-color:  #615048;
-}
-
-.button:focus {
-  background-color:  #615048;
-  outline: none;
-}
-
-.button:active {
-  color: rgba(255, 255, 255, 0.3);
-  background-color:  #756157;
-}
-
 .hero {
   background-image: url("../images/backgrounds/hero-bg-decor.svg"), url("../images/backgrounds/hero-bg.jpg");
   background-size: 100% auto, cover;
@@ -189,8 +235,6 @@ fieldset {
 }
 
 .advantages-description {
-  font-size: 22px;
-  line-height: 26px;
   text-align: center;
   color: #333;
   margin-bottom: 69px;
@@ -264,8 +308,6 @@ fieldset {
 }
 
 .services-description {
-  font-size: 22px;
-  line-height: 26px;
   text-align: center;
   color: #333;
 }
@@ -280,8 +322,6 @@ fieldset {
 }
 
 .search-description {
-  font-size: 22px;
-  line-height: 26px;
   text-align: center;
   color: #333;
   margin-bottom: 54px;
@@ -319,9 +359,6 @@ fieldset {
 }
 
 .subscribe-description {
-  font-weight: 400;
-  font-size: 22px;
-  line-height: 26px;
   text-align: center;
   color: #fff;
   margin-bottom: 54px;
@@ -337,7 +374,6 @@ fieldset {
   min-width: 452px;
   padding: 12px 0 12px 20px;
   margin: 0;
-  font-weight: 400;
   font-size: 18px;
   line-height: 24px;
   color:  #000;
@@ -349,47 +385,29 @@ fieldset {
   padding: 8px 50px;
   width: 232px;
   height: 52px;
-  border: none;
-  background-color: #82b3d3;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 36px;
-  text-transform: uppercase;
-  text-align: center;
-  color: #fff;
-}
-
-.button-subscribe:hover {
-  background-color: #68a2ca;
-}
-
-.button-subscribe:focus {
-  background-color: #68a2ca;
-}
-
-.button-subscribe:active {
-  opacity: 0.3;
 }
 
 .social-list {
   display: flex;
+}
+
+.social-link {
   color: #83b3d3;
 }
 
-.social-list:hover {
+.social-link:hover {
   color: #68a2ca;
 }
 
-.social-list:focus {
+.social-link:focus {
   color: #68a2ca;
 }
 
-.social-list:active {
+.social-link:active {
   opacity: 0.3;
 }
 
 .contact {
-  font-weight: 400;
   font-size: 40px;
   line-height: 40PX;
   text-transform: uppercase;
@@ -450,6 +468,9 @@ fieldset {
   line-height: 21px;
   color: #fff;
 }
+.breadcrumbs-link {
+  color: inherit;
+}
 
 .hotels-filter-form {
   display: flex;
@@ -463,8 +484,11 @@ fieldset {
 }
 
 .hotels-filter-item {
-  font-weight: 400;
   font-size: 18px;
   line-height: 23px;
   color: #fff;
+}
+
+.filter-button {
+  background-color: #68a2ca;
 }
