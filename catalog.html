@@ -64,7 +64,7 @@
             <ul class="breadcrumbs">
               <li class="breadcrumbs-item">
                 <a class="breadcrumbs-link" href="index.html">
-                  <span class="visually-hidden">Главная</span>
+                  <span>Главная</span>
                 </a>
               </li>
               <li class="breadcrumbs-item">
@@ -134,119 +134,127 @@
               <button class="button button-transparent" type="reset">Сбросить</button>
             </form>
           </div>
-          <div class="view-hotels">
-            <p class="view-hotels-text">Найдено гостиниц: <span class="view-hotels-number">38</span></p>
+          <div class="view-hotels flex">
+            <p class="title view-hotels-text">Найдено гостиниц: <span class="view-hotels-number">38</span></p>
             <select class="view-hotels-select" aria-label="Сортировка">
               <option value="cheap">Сначала дешевые</option>
               <option value="expensive">Сначала дорогие</option>
               <option value="popular">Сначала популярные</option>
             </select>
-            <ul class="view-hotels-list">
-              <li class="view-hotels-item">
-                <a class="view-hotels-link view-hotels-active" href="catalog.html?view=tile">
-                  <span class="visually-hidden">
-                    Плиткой
-                  </span>
+              <ul class="view-hotels-list flex">
+                <li class="view-hotels-item">
+                  <a class="view-hotels-link view-hotels-active" href="catalog.html?view=tile">
+                    <span class="#">
+                      Плиткой
+                    </span>
+                  </a>
+                </li>
+                <li class="view-hotels-item">
+                  <a class="view-hotels-link" href="catalog.html?view=card">
+                    <span class="#">
+                      По одной
+                    </span>
+                  </a>
+                </li>
+                <li class="view-hotels-item">
+                  <a class="view-hotels-link" href="catalog.html?view=list">
+                    <span class="#">
+                      Списком
+                    </span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <ul class="hotel-list flex" data-test="catalog">
+              <li class="hotel-card">
+                <a class="hotel-card-link" href="#">
+                  <img class="hotel-card-image" src="images/catalog/amara.jpg" width="300" height="212" alt="Вид на звездное небо через ущелье">
+                  <h3 class="hotel-card-title" lang="en">Amara Resort & Spa</h3>
                 </a>
+                <p class="hotel-type">Гостиница</p>
+                <p class="hotel-card-price">От 4000 ₽</p>
+                <div class="card-wrapper">
+                  <a class="button button-brown hotel-card-button-more" href="#">Подробнее</a>
+                  <button class="button button-blue hotel-card-button-favourites">В избранное</button>
+                  <div class="hotel-stars">1111</div>
+                  <p class="hotel-rating">Рейтинг:<span class="hotel-rating-number">8,5</span></p>
+                </div>
               </li>
-              <li class="view-hotels-item">
-                <a class="view-hotels-link" href="catalog.html?view=card">
-                  <span class="visually-hidden">
-                    По одной
-                  </span>
+              <li class="hotel-card">
+                <a class="hotel-card-link" href="#">
+                  <img class="hotel-card-image" src="images/catalog/villas.jpg" width="300" height="212" alt="Тучи и радуга над скалами">
+                  <h3 class="hotel-card-title" lang="en">Villas at Poco Diablo</h3>
                 </a>
+                <p class="hotel-type">Гостиница</p>
+                <p class="hotel-card-price">От 5000 ₽</p>
+                <div class="card-wrapper">
+                  <a class="button button-brown hotel-card-button-more" href="#">Подробнее</a>
+                  <button class="button button-blue hotel-card-button-favourites">В избранное</button>
+                  <div class="hotel-stars">1111</div>
+                  <p class="hotel-rating">Рейтинг:<span class="hotel-rating-number">9,2</span></p>
+                </div>
               </li>
-              <li class="view-hotels-item">
-                <a class="view-hotels-link" href="catalog.html?view=list">
-                  <span class="visually-hidden">
-                    Списком
-                  </span>
+              <li class="hotel-card">
+                <a class="hotel-card-link" href="#">
+                  <img class="hotel-card-image" src="images/catalog/desert.jpg" width="300" height="212" alt="Скалы на фоне ясого неба">
+                  <h3 class="hotel-card-title" lang="en">Desert Quail Inn</h3>
                 </a>
+                <p class="hotel-type">Гостиница</p>
+                <p class="hotel-card-price">От 2500 ₽</p>
+                <div class="card-wrapper">
+                  <a class="button button-brown hotel-card-button-more" href="#">Подробнее</a>
+                  <button class="button button-blue hotel-card-button-favourites">В избранное</button>
+                  <div class="hotel-stars">111</div>
+                  <p class="hotel-rating">Рейтинг:<span class="hotel-rating-number">6,9</span></p>
+                </div>
+              </li>
+              <li class="hotel-card">
+                <a class="hotel-card-link" href="#">
+                  <img class="hotel-card-image" src="images/catalog/greentree.jpg" width="300" height="212" alt="Скалы на фоне звездного неба">
+                  <h3 class="hotel-card-title" lang="en">GreenTree Inn</h3>
+                </a>
+                <p class="hotel-type">Гостиница</p>
+                <p class="hotel-card-price">От 1500 ₽</p>
+                <div class="card-wrapper">
+                  <a class="button button-brown hotel-card-button-more" href="#">Подробнее</a>
+                  <button class="button button-blue hotel-card-button-favourites">В избранное</button>
+                  <div class="hotel-stars">11</div>
+                  <p class="hotel-rating">Рейтинг:<span class="hotel-rating-number">5,0</span></p>
+                </div>
               </li>
             </ul>
-          </div>
-          <ul class="hotel-list" data-test="catalog">
-            <li class="hotel-card">
-              <a class="hotel-card-link" href="#">
-                <img class="hotel-card-image" src="images/amara.jpg" width="300" height="212" alt="Вид на звездное небо через ущелье">
-                <h3 class="hotel-card-title" lang="en">Amara Resort & Spa</h3>
-              </a>
-              <p class="hotel-type">Гостиница</p>
-              <b class="hotel-card-price">От 4000 ₽</b>
-              <a class="hotel-card-button-more button" href="#">Подробнее</a>
-              <button class="hotel-card-button-favourites button">В избранное</button>
-              <div class="hotel-stars"></div>
-              <p class="hotel-rating">Рейтинг:<span class="hotel-rating-number">8,5</span></p>
-            </li>
-            <li class="hotel-card">
-              <a class="hotel-card-link" href="#">
-                <img class="hotel-card-image" src="images/villas.jpg" width="300" height="212" alt="Тучи и радуга над скалами">
-                <h3 class="hotel-card-title" lang="en">Villas at Poco Diablo</h3>
-              </a>
-              <p class="hotel-type">Гостиница</p>
-              <b class="hotel-card-price">От 5000 ₽</b>
-              <a class="hotel-card-button-more button" href="#">Подробнее</a>
-              <button class="hotel-card-button-favourites button" href="#">В избранное</button>
-              <div class="hotel-stars"></div>
-              <p class="hotel-rating">Рейтинг:<span class="hotel-rating-number">9,2</span></p>
-            </li>
-            <li class="hotel-card">
-              <a class="hotel-card-link" href="#">
-                <img class="hotel-card-image" src="images/desert.jpg" width="300" height="212" alt="Скалы на фоне ясого неба">
-                <h3 class="hotel-card-title" lang="en">Desert Quail Inn</h3>
-              </a>
-              <p class="hotel-type">Гостиница</p>
-              <b class="hotel-card-price">От 2500 ₽</b>
-              <a class="hotel-card-button-more button" href="#">Подробнее</a>
-              <button class="hotel-card-button-favourites button" href="#">В избранное</button>
-              <div class="hotel-stars"></div>
-              <p class="hotel-rating">Рейтинг:<span class="hotel-rating-number">6,9</span></p>
-            </li>
-            <li class="hotel-card">
-              <a class="hotel-card-link" href="#">
-                <img class="hotel-card-image" src="images/greentree.jpg" width="300" height="212" alt="Скалы на фоне звездного неба">
-                <h3 class="hotel-card-title" lang="en">GreenTree Inn</h3>
-              </a>
-              <p class="hotel-type">Гостиница</p>
-              <b class="hotel-card-price">От 1500 ₽</b>
-              <a class="hotel-card-button-more button" href="#">Подробнее</a>
-              <button class="hotel-card-button-favourites button" href="#">В избранное</button>
-              <div class="hotel-stars"></div>
-              <p class="hotel-rating">Рейтинг:<span class="hotel-rating-number">5,0</span></p>
-            </li>
-          </ul>
           <ol class="pagination">
             <li class="pagination-item">
               <a class="pagination-item-link current-page" href="#">1</a>
             </li>
             <li class="pagination-item">
-              <a class="pagination-item-link" href="#">2</a>
+              <a class="button button-blue pagination-item-link" href="#">2</a>
             </li>
             <li class="pagination-item">
-              <a class="pagination-item-link" href="#">3</a>
+              <a class="button button-blue pagination-item-link" href="#">3</a>
             </li>
             <li class="pagination-item">
-              <a class="pagination-item-link" href="#">4</a>
+              <a class="button button-blue pagination-item-link" href="#">4</a>
             </li>
             <li class="pagination-item">
-              <a class="pagination-item-link" href="#">...</a>
+              <a class="button button-blue pagination-item-link more-page" href="#">...</a>
             </li>
             <li class="pagination-item">
-              <a class="pagination-item-link" href="#">10</a>
+              <a class="button button-blue pagination-item-link" href="#">10</a>
             </li>
           </ol>
         </section>
-        <section class="subscribe">
-          <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
-          <p class="subscribe-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
-          <form class="subscribe-form" action="https://echo.htmlacademy.ru" method="post">
+        <section class="subscribe subscribe-no-bg" data-test="subscribe">
+          <h2 class="title subscribe-title">Подпишитесь на рассылку</h2>
+          <p class="subscribe-description">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
+          <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
             <label class="visually-hidden" for="subscribe-email">Укажите Ваш email</label>
-            <input type="email" id="subscribe-email" name="user-email" placeholder="Ваш e-mail" required>
+            <input class="subscribe-form-input" type="email" id="subscribe-email" name="user-email" placeholder="Ваш e-mail" required>
             <button class="button button-blue button-subscribe" type="submit">Подписаться</button>
           </form>
         </section>
       </main>
-      <footer class="inner-footer flex">
+      <footer class="page-footer flex" data-test="footer">
         <ul class="social-list">
           <li class="social-item">
             <a class="social-link" href="https://vk.com/htmlacademy" target="_blank" rel="noreferrer noopener" aria-label="Ссылка на страницу htmlacademy во Вконтакте">
