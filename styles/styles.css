@@ -15,6 +15,7 @@
 }
 
 html {
+  height: 100%;
   box-sizing: border-box;
   position: relative;
   scroll-behavior: smooth;
@@ -33,14 +34,18 @@ img {
 }
 
 body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 22px;
   font-weight: 400;
   line-height: 26px;
   text-align: center;
-  color:#333;
+  color: #333333;
   background-color: #f2f2f2;
-  margin: 0;
+  /* outline: 3px solid #83b3d3;
+  outline-offset: -5px; */
 }
 
 .visually-hidden {
@@ -54,10 +59,14 @@ body {
   white-space: nowrap; /* Запрещаем перенос строк */
 }
 
+.main-container {
+  flex-grow: 1;
+}
+
 .button {
   font-family: inherit;
   border-radius: 4px;
-  color: #fff;
+  color: #ffffff;
   font-weight: 700;
   font-size: 16px;
   line-height: 36px;
@@ -132,7 +141,7 @@ body {
 .hotels-filter-group {
   margin: 0;
   padding: 0;
-  border:0 none;
+  border: 0 none;
 }
 
 .wrapper {
@@ -151,25 +160,49 @@ body {
 
 .navigation {
   display: flex;
-  justify-content: space-between;
+  width: 1200px;
+  height: 64px;
   padding: 0 70px;
 }
 
+.navigation-logo {
+  margin-right: 30px;
+}
+
+.likes-number {
+  width: 20px;
+  height: 20px;
+  font-size: 10px;
+  line-height: 100%;
+  text-align: center;
+  color: #ffffff;
+  background-color:  #7db54f;
+  border-radius: 50%;
+}
+
 .navigation-list {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 32px;
-  list-style: none;
   margin: 0;
   padding: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.navigation-pages {
+  width: 465px;
+}
+
+.navigation-user {
+  max-width: 312px;
+  margin-left: auto;
 }
 
 .navigation-link {
   font-size: 20px;
   font-weight: 700;
   line-height: 24px;
-  color:  #000;
+  color: #000000;
   text-decoration: none;
 }
 
@@ -212,7 +245,7 @@ body {
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
-  color:#000;
+  color: #000;
 }
 
 .advantages {
@@ -224,18 +257,18 @@ body {
 }
 
 .advantages-description {
-  margin: 0 0 69px 0;
+  margin: 0 0 89px 0;
 }
 
 .advantages-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  min-height: 385px;
   margin: 0;
   padding: 0;
   list-style: none;
 }
-
-/* .advantages-item {
-  padding: 100px 85px;
-} */
 
 .advantages-item-description {
   margin: 0;
@@ -243,16 +276,20 @@ body {
 
 .advantages-item:first-child,
 .advantages-item:last-child {
+  grid-column-start: 1;
+  grid-column-end: 4;
   background-color: #82b3d3;
-  color:  #fff;
+  color: #ffffff;
 }
 
 .advantages-item:nth-child(2n) {
   background-color: rgba(131, 179, 211, 0.12);
+  padding: 112px 85px;
 }
 
 .advantages-item:nth-child(3) {
   background-color: rgba(131, 179, 211, 0.2);
+  padding: 112px 85px;
 }
 
 .advantages-item-title {
@@ -270,12 +307,8 @@ body {
 
 .flex-reverse {
   display: flex;
-  justify-content: space-between;
   flex-direction: row-reverse;
-}
-
-.advantages-item-text {
-  padding: 100px 85px;
+  align-items: center;
 }
 
 .services {
@@ -284,46 +317,61 @@ body {
 
 .services-title {
   margin: 0 0 20px 0;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 28px;
   text-transform: uppercase;
   margin-bottom: 20px;
-  color:#000;
+  color: #000000;
 }
 
 .services-list {
   margin: 0;
   padding: 0;
+  display: flex;
   list-style: none;
 }
 
 .services-item {
-  color:#000;
+  width: 400px;
+  height: 385px;
+  padding: 183px 85px 81px;
+  color: #000000;
 }
 
 .services-img-house {
   background-image: url("../images/icons/house.png");
   background-repeat: no-repeat;
-  background-position: left bottom;
+  background-position: center 81px;
   background-color: rgba(131, 179, 211, 0.12);
 }
 
 .services-img-food {
   background-image: url("../images/icons/food.png");
   background-repeat: no-repeat;
-  background-position: left bottom;
+  background-position: center 81px;
 }
 
 .services-img-souvenir {
   background-image: url("../images/icons/souvenir.png");
   background-repeat: no-repeat;
-  background-position: left bottom;
+  background-position: center 81px;
   background-color: rgba(131, 179, 211, 0.12);
 }
 
 .services-description {
-  color: #333;
+  color: #333333;
+  margin: 0 0 64px 0;
+}
+
+.services-item-title {
+  margin: 0;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+
+.services-item-description {
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
 }
 
 .search {
@@ -358,16 +406,16 @@ body {
 .subscribe-title {
   padding: 96px 0 0;
   margin-bottom: 20px;
-  color:#fff;
+  color: #ffffff;
 }
 
 .subscribe-description {
-  color: #fff;
+  color: #ffffff;
   margin-bottom: 54px;
 }
 
 .subscribe-form {
-  display:flex;
+  display: flex;
   justify-content: center;
 }
 
@@ -379,7 +427,7 @@ body {
   font-family: inherit;
   font-size: 18px;
   line-height: 24px;
-  color:  #000;
+  color:  #000000;
   background-color:  #f2f2f2;
   border: none;
 }
@@ -460,7 +508,7 @@ body {
   font-weight: 700;
   font-size: 60px;
   line-height: 78px;
-  color: #fff;
+  color: #ffffff;
   text-align: left;
 }
 
@@ -484,7 +532,7 @@ body {
 .breadcrumbs-item {
   font-size: 16px;
   line-height: 21px;
-  color: #fff;
+  color: #ffffff;
 }
 
 .breadcrumbs-link {
@@ -506,7 +554,7 @@ body {
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
-  color: #fff;
+  color: #ffffff;
 }
 
 .hotels-filter-list {
@@ -519,7 +567,7 @@ body {
 .hotels-filter-item {
   font-size: 18px;
   line-height: 23px;
-  color: #fff;
+  color: #ffffff;
 }
 
 .filter-button {
@@ -539,7 +587,7 @@ body {
   font-family: inherit;
   font-size: 18px;
   line-height: 21px;
-  color: #333;
+  color: #333333;
   border: 2px solid #e5e5e5;
   border-radius: 4px;
   vertical-align: middle;
@@ -579,7 +627,7 @@ body {
 
 .hotel-card-title {
   margin: 0 0 16px;
-  color:  #000;
+  color: #000000;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
@@ -660,15 +708,15 @@ body {
 
 .current-page {
   background-color: #f2f2f2;
-  color:#000;
+  color: #000000;
 }
 
 .more-page,
 .more-page:hover,
 .more-page:focus,
 .more-page:active {
-  background-color: #fff;
-  color:#000;
+  background-color: #ffffff;
+  color: #000000;
 }
 
 .subscribe-no-bg {
