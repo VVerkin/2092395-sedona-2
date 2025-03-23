@@ -305,6 +305,10 @@ body {
   line-height: 21px;
 }
 
+.advantages-item-text {
+  padding: 0 85px;
+}
+
 .flex-reverse {
   display: flex;
   flex-direction: row-reverse;
