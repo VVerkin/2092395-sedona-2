@@ -627,17 +627,20 @@ body {
 }
 
 .hotel-list {
+  display: flex;
   margin: 0;
   list-style: none;
-  padding: 0 70px;
+  padding: 0 70px 20px;
   flex-wrap: wrap;
+  gap: 20px;
+  border-bottom: 1px solid #e5e5e5;
 }
 
 .hotel-card {
-  margin: 0 0 20px;
+  margin: 0;
   border: 2px solid #e5e5e5;
   padding: 20px;
-  width: 340px;
+  flex-basis: 340px;
   border-radius: 4px;
 }
 
