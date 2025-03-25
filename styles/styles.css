@@ -187,6 +187,7 @@ body {
   display: flex;
   align-items: center;
   gap: 32px;
+  flex-wrap: wrap;
 }
 
 .navigation-pages {
@@ -207,7 +208,9 @@ body {
 }
 
 .navigation-link-button  {
-  padding: 8px 34px;
+  display: block;
+  min-width: 160px;
+  padding: 0 8px;
   text-decoration: none;
 }
 
@@ -245,7 +248,7 @@ body {
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
-  color: #000;
+  color: #000000;
 }
 
 .advantages {
@@ -268,28 +271,36 @@ body {
   margin: 0;
   padding: 0;
   list-style: none;
+  grid-auto-rows: 385px;
 }
 
-.advantages-item-description {
-  margin: 0;
-}
-
-.advantages-item:first-child,
-.advantages-item:last-child {
+.advantages-item-dark {
   grid-column-start: 1;
   grid-column-end: 4;
   background-color: #82b3d3;
   color: #ffffff;
+  flex-grow: 1;
 }
 
-.advantages-item:nth-child(2n) {
+.advantages-item-light,
+.advantages-item-medium {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 85px;
+}
+
+.advantages-item-light  {
   background-color: rgba(131, 179, 211, 0.12);
-  padding: 112px 85px;
 }
 
-.advantages-item:nth-child(3) {
+.advantages-item-medium {
   background-color: rgba(131, 179, 211, 0.2);
-  padding: 112px 85px;
+}
+
+.advantages-item-description {
+  margin: 0;
+  overflow-wrap: anywhere;
 }
 
 .advantages-item-title {
@@ -331,13 +342,18 @@ body {
   padding: 0;
   display: flex;
   list-style: none;
+  flex-wrap: wrap;
 }
 
 .services-item {
   width: 400px;
-  height: 385px;
-  padding: 183px 85px 81px;
+  min-height: 385px;
+  padding: 183px 85px 0;
   color: #000000;
+}
+
+.services-item-description {
+  overflow-wrap: anywhere;
 }
 
 .services-img-house {
@@ -444,15 +460,18 @@ body {
 }
 
 .page-footer {
+  min-height: 120px;
   padding: 40px 70px 30px;
 }
 
 .social-list {
   display: flex;
+  width: 256px;
   gap: 24px;
   margin: 0;
   padding: 0;
   list-style: none;
+  flex-wrap: wrap;
 }
 
 .social-link {
@@ -472,10 +491,11 @@ body {
 }
 
 .contact {
+  width: 331px;
   font-size: 40px;
   line-height: 40px;
   text-transform: uppercase;
-  color:  #000;
+  color:  #000000;
   text-decoration: none;
 }
 
@@ -492,7 +512,9 @@ body {
 }
 
 .author-logo {
-  color:  #000;
+  width: 115px;
+  color:  #000000;
+  text-align: end;
 }
 
 .author-logo:hover {
