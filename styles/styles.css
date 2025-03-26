@@ -567,20 +567,42 @@ body {
 }
 
 .breadcrumbs-link span {
-    background-image: url("../images/icons/breadcrumbs-home.svg");
-    background-repeat: no-repeat;
-    background-position: left bottom;
+  background-image: url("../images/icons/breadcrumbs-home.svg");
+  background-repeat: no-repeat;
+  background-position: left bottom;
 }
 
 .hotels-filter-form {
   display: flex;
 }
 
+.hotels-filter-group {
+  margin: 0;
+  padding: 0;
+}
+
+.hotels-infrastructure {
+  width: 150px;
+  margin: 0;
+  padding: 0;
+}
+
+.hotels-filter-group {
+  margin-right: 70px;
+}
+.hotels-type {
+  width: 150px;
+}
+
+
 .hotels-filter-title {
+  padding: 0;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
   color: #ffffff;
+  margin-bottom: 32px;
+  text-align: left;
 }
 
 .hotels-filter-list {
@@ -594,15 +616,48 @@ body {
   font-size: 18px;
   line-height: 23px;
   color: #ffffff;
+  margin-bottom: 16px;
+}
+
+.hotels-price-input {
+  border-radius: 4px 0 0 4px;
+  border: none;
+  padding: 12px 20px;
+  width: 143px;
+  height: 48px;
+  background-color: #f2f2f2;
+  margin-bottom: 36px;
+}
+
+.hotels-price-input-left {
+  border-radius: 4px 0 0 4px;
+}
+
+.hotels-price-input-right {
+  border-radius: 0 4px 4px 0;
+}
+
+.hotels-filter-buttons {
+  display: flex;
+  flex-direction: column;
+  padding-top: 56px;
 }
 
 .filter-button {
+  min-width: 191px;
   background-color: #68a2ca;
+  margin-bottom: 32px;
 }
 
 .view-hotels {
+  display: flex;
+  justify-content: space-between;
   align-items: center;
   padding: 50px 70px 40px;
+}
+
+.view-hotels-text {
+  min-width: 338px;
 }
 
 .view-hotels-list {
