@@ -185,7 +185,7 @@ body {
 }
 
 .navigation-pages {
-  width: 465px;
+  max-width: 465px;
 }
 
 .navigation-user {
@@ -477,15 +477,16 @@ body {
 
 .page-footer {
   min-height: 120px;
-  padding: 40px 70px 30px;
+  padding: 0 70px;
+  flex-wrap: wrap;
 }
 
 .social-list {
   display: flex;
   width: 256px;
-  gap: 24px;
+  gap: 28px;
   margin: 0;
-  padding: 0;
+  padding:  10px 0 0 10px;
   list-style: none;
   flex-wrap: wrap;
 }
@@ -507,12 +508,15 @@ body {
 }
 
 .contact {
-  width: 331px;
+  width: 446px;
   font-size: 40px;
   line-height: 40px;
   text-transform: uppercase;
   color:  #000000;
   text-decoration: none;
+  text-align: left;
+  overflow-wrap: anywhere;
+  padding-top: 10px;
 }
 
 .contact:hover {
@@ -529,6 +533,7 @@ body {
 
 .author-logo {
   width: 115px;
+  padding-top: 10px;
   color:  #000000;
   text-align: end;
 }
