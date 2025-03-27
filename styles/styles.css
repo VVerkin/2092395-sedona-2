@@ -160,24 +160,18 @@ body {
 
 .navigation {
   display: flex;
-  width: 1200px;
-  height: 64px;
+  max-width: 1200px;
+  min-height: 64px;
   padding: 0 70px;
 }
 
 .navigation-logo {
-  margin-right: 30px;
+  margin-right: 184px;
 }
 
-.likes-number {
-  width: 20px;
-  height: 20px;
-  font-size: 10px;
-  line-height: 100%;
-  text-align: center;
-  color: #ffffff;
-  background-color:  #7db54f;
-  border-radius: 50%;
+.navigation-logo-img {
+  display: block;
+  position: absolute;
 }
 
 .navigation-list {
@@ -186,7 +180,7 @@ body {
   list-style: none;
   display: flex;
   align-items: center;
-  gap: 32px;
+  column-gap: 32px;
   flex-wrap: wrap;
 }
 
@@ -212,6 +206,18 @@ body {
   min-width: 160px;
   padding: 0 8px;
   text-decoration: none;
+  overflow-wrap: anywhere;
+}
+
+.likes-number {
+  width: 20px;
+  height: 20px;
+  font-size: 10px;
+  line-height: 100%;
+  text-align: center;
+  color: #ffffff;
+  background-color:  #7db54f;
+  border-radius: 50%;
 }
 
 .navigation-search {
@@ -317,7 +323,7 @@ body {
 }
 
 .advantages-item-text {
-  padding: 0 85px;
+  padding: 0 84px;
 }
 
 .flex-reverse {
@@ -348,12 +354,8 @@ body {
 .services-item {
   width: 400px;
   min-height: 385px;
-  padding: 183px 85px 0;
+  padding: 185px 84px 0;
   color: #000000;
-}
-
-.services-item-description {
-  overflow-wrap: anywhere;
 }
 
 .services-img-house {
@@ -383,15 +385,20 @@ body {
 
 .services-item-title {
   margin: 0;
+  margin-bottom: 8px;
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
 }
 
 .services-item-description {
+  margin: 0;
+  padding: 0;
   font-size: 18px;
   line-height: 21px;
   color: #333333;
+  white-space: pre-line;
+  /* overflow-wrap: anywhere; */
 }
 
 .search {
@@ -404,12 +411,18 @@ body {
 
 .search-description {
   margin: 0 0 54px 0;
+  white-space: pre-line;
 }
 
 .search-button {
   display: block;
-  padding: 8px 50px;
+  width: 376px;
+  padding: 8px;
   margin: 0 auto 96px;
+
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
 }
 
 .subscribe {
@@ -456,7 +469,10 @@ body {
   border-radius: 0 4px 4px 0;
   padding: 8px 50px;
   width: 232px;
-  height: 52px;
+  min-height: 52px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
 }
 
 .page-footer {
