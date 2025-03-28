@@ -194,6 +194,8 @@ body {
 }
 
 .navigation-link {
+  display: block;
+  padding: 20px 16px;
   font-size: 20px;
   font-weight: 700;
   line-height: 24px;
@@ -209,7 +211,23 @@ body {
   overflow-wrap: anywhere;
 }
 
+.navigation-search {
+  background-image: url("../images/icons/search.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.navigation-favourites {
+  position: relative;
+  background-image: url("../images/icons/heart.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
 .likes-number {
+  position: absolute;
+  top: 0;
+  padding-top: 5px;
   width: 20px;
   height: 20px;
   font-size: 10px;
@@ -218,18 +236,6 @@ body {
   color: #ffffff;
   background-color:  #7db54f;
   border-radius: 50%;
-}
-
-.navigation-search {
-  background-image: url("../images/icons/search.svg");
-  background-repeat: no-repeat;
-  background-position: left bottom;
-}
-
-.navigation-favourites {
-  background-image: url("../images/icons/heart.svg");
-  background-repeat: no-repeat;
-  background-position: left bottom;
 }
 
 .hero {
