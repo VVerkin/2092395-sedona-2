@@ -22,12 +22,12 @@
             </li>
             <li class="navigation-item">
               <a class="navigation-link" href="#">
-                О Седоне
+                <span>О Седоне</span>
               </a>
             </li>
             <li class="navigation-item">
               <a class="navigation-link" href="catalog.html" aria-current="page">
-                Гостиницы
+                <span class="navigation-link-active">Гостиницы</span>
               </a>
             </li>
           </ul>
@@ -143,31 +143,31 @@
               <option value="expensive">Сначала дорогие</option>
               <option value="popular">Сначала популярные</option>
             </select>
-              <ul class="view-hotels-list flex">
+              <ul class="view-hotels-list">
                 <li class="view-hotels-item">
-                  <a class="view-hotels-link view-hotels-active" href="catalog.html?view=tile">
-                    <span class="#">
+                  <a class="view-hotels-link view-hotels-link-tile view-hotels-link-active" href="catalog.html?view=tile">
+                    <span class="visually-hidden">
                       Плиткой
                     </span>
                   </a>
                 </li>
                 <li class="view-hotels-item">
-                  <a class="view-hotels-link" href="catalog.html?view=card">
-                    <span class="#">
+                  <a class="view-hotels-link view-hotels-link-card" href="catalog.html?view=card">
+                    <span class="visually-hidden">
                       По одной
                     </span>
                   </a>
                 </li>
                 <li class="view-hotels-item">
-                  <a class="view-hotels-link" href="catalog.html?view=list">
-                    <span class="#">
+                  <a class="view-hotels-link view-hotels-link-list" href="catalog.html?view=list">
+                    <span class="visually-hidden">
                       Списком
                     </span>
                   </a>
                 </li>
               </ul>
             </div>
-            <ul class="hotel-list" data-test="catalog">
+            <ul class="hotel-card-list" data-test="catalog">
               <li class="hotel-card">
                 <a class="hotel-card-link" href="#">
                   <img class="hotel-card-image" src="images/catalog/amara.jpg" width="300" height="212" alt="Вид на звездное небо через ущелье">
@@ -182,7 +182,12 @@
                   <button class="button button-blue hotel-card-button-favourites">В избранное</button>
                 </div>
                 <div class="hotel-rating-wrapper">
-                  <div class="hotel-stars">1111</div>
+                  <div class="hotel-stars">
+                    <span class="hotel-stars-img"></span>
+                    <span class="hotel-stars-img"></span>
+                    <span class="hotel-stars-img"></span>
+                    <span class="hotel-stars-img"></span>
+                  </div>
                   <p class="hotel-rating">Рейтинг:<span class="hotel-rating-number">8,5</span></p>
                 </div>
               </li>
@@ -197,10 +202,15 @@
                 </div>
                 <div class="card-buttons-wrapper">
                   <a class="button button-brown hotel-card-button-more" href="#">Подробнее</a>
-                  <button class="button button-blue hotel-card-button-favourites">В избранное</button>
+                  <button class="button button-blue hotel-card-button-favourites hotel-add-favourites">В избранном</button>
                 </div>
                 <div class="hotel-rating-wrapper">
-                  <div class="hotel-stars">1111</div>
+                  <div class="hotel-stars">
+                    <span class="hotel-stars-img"></span>
+                    <span class="hotel-stars-img"></span>
+                    <span class="hotel-stars-img"></span>
+                    <span class="hotel-stars-img"></span>
+                  </div>
                   <p class="hotel-rating">Рейтинг:<span class="hotel-rating-number">9,2</span></p>
                 </div>
               </li>
@@ -218,7 +228,11 @@
                   <button class="button button-blue hotel-card-button-favourites">В избранное</button>
                 </div>
                 <div class="hotel-rating-wrapper">
-                  <div class="hotel-stars">111</div>
+                  <div class="hotel-stars">
+                    <span class="hotel-stars-img"></span>
+                    <span class="hotel-stars-img"></span>
+                    <span class="hotel-stars-img"></span>
+                  </div>
                   <p class="hotel-rating">Рейтинг:<span class="hotel-rating-number">6,9</span></p>
                 </div>
               </li>
@@ -236,7 +250,10 @@
                   <button class="button button-blue hotel-card-button-favourites">В избранное</button>
                 </div>
                 <div class="hotel-rating-wrapper">
-                  <div class="hotel-stars">11</div>
+                  <div class="hotel-stars">
+                    <span class="hotel-stars-img"></span>
+                    <span class="hotel-stars-img"></span>
+                  </div>
                   <p class="hotel-rating">Рейтинг:<span class="hotel-rating-number">5,0</span></p>
                 </div>
               </li>
