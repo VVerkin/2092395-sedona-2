@@ -730,7 +730,7 @@ body {
   cursor: pointer;
 }
 
-.hotels-filter-checkbox:before {
+.hotels-filter-checkbox::before {
   content: "";
   position: absolute;
   top: 0;
@@ -738,6 +738,7 @@ body {
   display: block;
   width: 20px;
   height: 20px;
+  border-radius: 4px;
   background-color: #ffffff;
   outline-color: #68a2ca;;
   transition-property: outline, box-shadow;
@@ -745,7 +746,7 @@ body {
   transition-timing-function: ease-in-out;
 }
 
-.hotels-filter-checkbox:after {
+.hotels-filter-checkbox::after {
   content: "";
   position: absolute;
   top: 2px;
