@@ -631,9 +631,21 @@ body {
 }
 
 .breadcrumbs-item {
+  position: relative;
   font-size: 16px;
   line-height: 21px;
   color: #ffffff;
+}
+
+.breadcrumbs-item:not(:first-child)::before {
+  content: "";
+  position: absolute;
+  display: block;
+  left: -18px;
+  top: 1px;
+  width: 8px;
+  height: 20px;
+  background-image: url("../images/icons/breadcrumbs-arrow.svg");
 }
 
 .breadcrumbs-link {
@@ -696,6 +708,15 @@ body {
   line-height: 23px;
   color: #ffffff;
   margin-bottom: 16px;
+}
+
+.reserv__checkbox-input {
+  position: absolute;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin-left: -38px;
+  cursor: pointer;
 }
 
 .view-hotels {
