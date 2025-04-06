@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
+    <link rel="icon" type="image/svg" sizes="32x32" href="images/favicon.svg">
     <link rel="stylesheet" href="styles/styles.css">
     <title>Гостиницы</title>
   </head>
@@ -73,7 +73,7 @@
             </ul>
             <!-- <h2 class="visually-hidden">Список гостиниц с фильтрами</h2> -->
             <form class="hotels-filter-form" action="https://echo.htmlacademy.ru" method="get">
-              <fieldset class="hotels-filter-group hotels-infrastructure">
+              <fieldset class="hotels-filter-group hotels-filter-infrastructure">
                 <legend class="hotels-filter-title">Инфраструктура:</legend>
                 <ul class="hotels-filter-list">
                   <li class="hotels-filter-item">
@@ -93,7 +93,7 @@
                   </li>
                 </ul>
               </fieldset>
-              <fieldset class="hotels-filter-group hotels-type">
+              <fieldset class="hotels-filter-group hotels-filter-type">
                 <legend class="hotels-filter-title">Тип Жилья:</legend>
                 <ul class="hotels-filter-list">
                   <li class="hotels-filter-item">
@@ -113,19 +113,19 @@
                     </li>
                 </ul>
               </fieldset>
-              <fieldset class="hotels-filter-group hotels-filter-ptice">
+              <fieldset class="hotels-filter-group hotels-filter-price">
                 <legend class="hotels-filter-title">Стоимость, ₽:</legend>
-                <label class="hotels-price">
+                <label class="hotels-price-label">
                   <input class="hotels-price-input hotels-price-input-left" type="number" name="start-price" placeholder="от">
                 </label>
-                <label class="hotels-price">
+                <label class="hotels-price-label">
                   <input class="hotels-price-input hotels-price-input-right" type="number" name="end-price" placeholder="до">
                 </label>
                 <div class="hotels-price-slider">
-                  <label class="hotels-price">
+                  <label class="hotels-price-label">
                     <input type="range" min="0" max="9000" step="1" value="0">
                   </label>
-                  <label class="hotels-price">
+                  <label class="hotels-price-label">
                     <input type="range" min="0" max="9000" step="1" value="9000">
                   </label>
                 </div>
