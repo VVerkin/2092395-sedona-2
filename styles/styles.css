@@ -303,6 +303,7 @@ body {
 
 .advantages-title {
   margin: 0 0 25px 0;
+  padding: 0 290px;
 }
 
 .advantages-description {
@@ -328,8 +329,9 @@ body {
 .advantages-item-medium {
   display: flex;
   margin: 0;
+  min-height: 385px;
   flex-basis: 400px;
-  padding: 112px 85px;
+  padding: 114px 85px 110px;
   flex-direction: column;
   flex-wrap: wrap;
   flex-grow: 1;
@@ -350,6 +352,7 @@ body {
 .advantages-item-title {
   position: relative;
   margin: 0 0 62px 0;
+  padding: 0 29px;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
@@ -360,7 +363,7 @@ body {
   content: "";
   position: absolute;
   display: block;
-  top: 87px;
+  top: 85px;
   right: calc(50% - 30px);
   width: 60px;
   height: 2px;
@@ -392,6 +395,7 @@ body {
 
 .services-title {
   margin: 0 0 20px 0;
+  padding: 0 347px;
   text-transform: uppercase;
   margin-bottom: 20px;
   color: #000000;
@@ -408,7 +412,7 @@ body {
 .services-item {
   width: 400px;
   min-height: 385px;
-  padding: 185px 84px 80px;
+  padding: 185px 86px 80px;
   color: #000000;
   flex-grow: 1;
 }
@@ -440,7 +444,7 @@ body {
 
 .services-item-title {
   margin: 0;
-  margin-bottom: 8px;
+  margin-bottom: 29px;
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
@@ -448,12 +452,21 @@ body {
 
 .services-item-description {
   margin: 0;
-  padding: 0;
   font-size: 18px;
   line-height: 21px;
   color: #333333;
   white-space: pre-line;
-  /* overflow-wrap: anywhere; */
+  text-align: center;
+}
+
+.services-item-button {
+  display: block;
+  width: 200px;
+  padding: 8px;
+  margin: 0 auto;
+  font-weight: 700;
+  font-size: 20px;
+  line-height:
 }
 
 .search {
@@ -545,14 +558,11 @@ body {
   flex-wrap: wrap;
 }
 
-.social-item {
-  width: 47px;
-  height: 40px;
-}
-
 .social-link {
   display: block;
-  padding-top: 10px;
+  padding: 8px;
+  width: 48px;
+  height: 40px;
   color: #83b3d3;
 }
 
@@ -576,8 +586,7 @@ body {
   color:  #000000;
   text-decoration: none;
   text-align: left;
-  overflow-wrap: break-word;
-  padding-top: 10px;
+  text-wrap: wrap;
 }
 
 .contact:hover {
