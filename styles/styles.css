@@ -27,9 +27,10 @@ html {
   box-sizing: border-box;
 }
 
-/* :focus {
+*:focus {
   outline: 3px solid #68a2ca;
-} */
+  border-radius: 4px;
+}
 
 img {
   max-width: 100%;
@@ -231,10 +232,11 @@ body {
 
 .navigation-link-button  {
   display: block;
-  min-width: 160px;
+  width: 160px;
+  min-height: 36px;
   padding: 0 8px;
   text-decoration: none;
-  overflow-wrap: break-word;
+  /* overflow-wrap: break-word; */
 }
 
 .navigation-search {
@@ -352,7 +354,6 @@ body {
 .advantages-item-title {
   position: relative;
   margin: 0 0 62px 0;
-  padding: 0 29px;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
@@ -459,16 +460,6 @@ body {
   text-align: center;
 }
 
-.services-item-button {
-  display: block;
-  width: 200px;
-  padding: 8px;
-  margin: 0 auto;
-  font-weight: 700;
-  font-size: 20px;
-  line-height:
-}
-
 .search {
   padding: 96px 304px 0;
 }
@@ -485,27 +476,26 @@ body {
 .search-button {
   display: block;
   width: 376px;
+  min-height: 52px;
   padding: 8px;
   margin: 0 auto 96px;
-
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
 }
 
 .subscribe {
+  padding: 96px 258px 104px;
   background-image: url("../images/backgrounds/subscribe-bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: left bottom;
+  background-position: center;
   background-color: #cae1ef;
-
   max-width: 1200px;
   min-height: 415px;
 }
 
 .subscribe-title {
-  padding: 96px 0 0;
   margin-bottom: 20px;
   color: #ffffff;
 }
@@ -521,7 +511,8 @@ body {
 }
 
 .subscribe-form-input {
-  min-width: 452px;
+  width: 452px;
+  min-height: 52px;
   padding: 12px 0 12px 20px;
   border-radius: 4px 0 0 4px;
   margin: 0;
@@ -533,14 +524,24 @@ body {
   border: none;
 }
 
+.subscribe-form-input:hover {
+  background-color:  #e6e6e6;
+}
+
+.subscribe-form-input:focus {
+  background-color:  #e6e6e6;
+}
+
 .button-subscribe {
+  display: block;
   border-radius: 0 4px 4px 0;
-  padding: 8px 50px;
+  padding: 8px 10px;
   width: 232px;
   min-height: 52px;
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
+  text-align: center;
 }
 
 .page-footer {
