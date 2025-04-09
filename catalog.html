@@ -121,13 +121,16 @@
                 <label class="hotels-price-label">
                   <input class="hotels-price-input hotels-price-input-right" type="number" name="end-price" placeholder="до">
                 </label>
-                <div class="hotels-price-slider">
-                  <label class="hotels-price-label">
-                    <input type="range" min="0" max="9000" step="1" value="0">
-                  </label>
-                  <label class="hotels-price-label">
-                    <input type="range" min="0" max="9000" step="1" value="9000">
-                  </label>
+                <div class="hotels-price-range">
+                  <div class="range-track">
+                    <button type="button" class="range-button">
+                      <span class="visually-hidden">От</span>
+                    </button>
+                    <span class="range-filled"></span>
+                    <button type="button" class="range-button range-button-right">
+                      <span class="visually-hidden">До</span>
+                    </button>
+                  </div>
                 </div>
               </fieldset>
               <div class="hotels-filter-buttons">
