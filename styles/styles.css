@@ -576,6 +576,7 @@ body {
   width: 48px;
   height: 40px;
   color: #83b3d3;
+  outline: none;
 }
 
 .social-link:hover {
@@ -599,6 +600,7 @@ body {
   text-decoration: none;
   text-align: left;
   text-wrap: wrap;
+  outline: none;
 }
 
 .contact:hover {
@@ -618,6 +620,7 @@ body {
   padding-top: 10px;
   color: #000000;
   text-align: end;
+  outline: none;
 }
 
 .author-logo:hover {
@@ -680,6 +683,7 @@ body {
   color: inherit;
   text-decoration: none;
   margin-right: 28px;
+  outline: none;
 }
 
 .breadcrumbs-link:hover {
@@ -1076,6 +1080,10 @@ body {
   border-color: #000000;
 }
 
+.view-hotels-link-active {
+  border-color: #000000;
+}
+
 .view-hotels-link-tile {
   background-image: url("../images/icons/view-tile.svg");
   background-repeat: no-repeat;
@@ -1244,6 +1252,7 @@ body {
   min-width: 60px;
   height: 60px;
   border-radius: 4px;
+  outline: none;
 }
 
 .current-page {
