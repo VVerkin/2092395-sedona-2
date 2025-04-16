@@ -913,11 +913,17 @@ body {
   outline: none;
 }
 
-.hotels-price-input-left {
+.hotels-price-input::-webkit-outer-spin-button,
+.hotels-price-input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
+.hotels-price-input-min {
   border-radius: 4px 0 0 4px;
 }
 
-.hotels-price-input-right {
+.hotels-price-input-max {
   border-radius: 0 4px 4px 0;
 }
 
@@ -957,8 +963,7 @@ body {
   background-color: #ffffff;
 }
 
-.range-button {
-  display: block;
+.range-toggle {
   position: absolute;
   left: 0;
   top: 50%;
@@ -968,18 +973,19 @@ body {
   border: none;
   border-radius: 5px;
   background-color: #ffffff;
+  cursor: pointer;
   z-index: 1;
 }
 
-.range-button-right {
+.range-toggle-right {
   left: 208px;
 }
 
-.range-button:focus {
+.range-toggle:focus {
   outline: 3px solid #83b3d3;
 }
 
-.range-button:active {
+.range-toggle:active {
   outline: 2px solid #83b3d3;
 }
 
@@ -1217,7 +1223,7 @@ body {
   height: 17px;
   background-image: url("../images/icons/rating-star.svg");
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: center;
 }
 
 .hotel-rating {
@@ -1275,4 +1281,58 @@ body {
 .subscribe-no-bg .subscribe-title,
 .subscribe-no-bg .subscribe-description {
 color: inherit;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.modal {
+  position: relative;
+  margin: auto;
+  width: 717px;
+  min-height: 576px;
+  padding: 64px 70px;
+  background-color: #ffffff;
+  border-radius: 30px;
+  box-shadow: 0 25px 50px 0 rgba(0, 0, 0, 0.15);
+}
+
+.modal-close-button {
+  position: absolute;
+  padding: 0;
+  top: 64px;
+  right: 52px;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background-image: url("../images/icons/close.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #f2f2f2;
+  border: none;
+  cursor: pointer;
+}
+
+.modal-close-button:hover {
+  background-color: #e5e5e5;
+}
+
+.modal-close-button:focus {
+  background-color: #e5e5e5;
+}
+
+.modal-close-button:active {
+  background-color: #e5e5e5;
+}
+
+.modal-title {
+  text-align: start;
+  margin-bottom: 64px;
 }
