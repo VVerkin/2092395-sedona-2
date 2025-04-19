@@ -914,7 +914,9 @@ body {
 }
 
 .hotels-price-input::-webkit-outer-spin-button,
-.hotels-price-input::-webkit-inner-spin-button {
+.hotels-price-input::-webkit-inner-spin-button,
+.modal-form-input-count::-webkit-outer-spin-button,
+.modal-form-input-count::-webkit-inner-spin-button {
   appearance: none;
   margin: 0;
 }
@@ -1293,6 +1295,10 @@ color: inherit;
   background-color: rgba(255, 255, 255, 0.8);
 }
 
+.modal-hide {
+  display: none;
+}
+
 .modal {
   position: relative;
   margin: auto;
@@ -1304,17 +1310,18 @@ color: inherit;
   box-shadow: 0 25px 50px 0 rgba(0, 0, 0, 0.15);
 }
 
+.modal-form {
+  position: relative;
+}
+
 .modal-close-button {
   position: absolute;
-  padding: 0;
+  padding: 19px;
   top: 64px;
-  right: 52px;
-  width: 52px;
+  right: 53px;
+  width: 53px;
   height: 52px;
   border-radius: 50%;
-  background-image: url("../images/icons/close.svg");
-  background-repeat: no-repeat;
-  background-position: center;
   background-color: #f2f2f2;
   border: none;
   cursor: pointer;
@@ -1325,11 +1332,12 @@ color: inherit;
 }
 
 .modal-close-button:focus {
-  background-color: #e5e5e5;
+  outline: 3px solid #83b3d3;
 }
 
 .modal-close-button:active {
-  background-color: #e5e5e5;
+  color: rgba(0, 0, 0, 0.3);
+  outline: none;
 }
 
 .modal-title {
@@ -1337,44 +1345,171 @@ color: inherit;
   margin-bottom: 64px;
 }
 
-.modal-form-group {
+.modal-form-fieldset {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
   margin: 0;
   padding: 0;
   border: none;
+  margin-bottom: 46px;
+}
+
+.modal-form-field-wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.modal-form-count-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .modal-form-label {
+  min-width: 119px;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
-  }
+  text-align: start;
+}
 
-  .modal-form-input[type="text"] {
-    width: 440px;
-  }
-
-  .modal-form-input[type="number"] {
-    width: 110px;
-  }
+.modal-form-label-data {
+  padding-top: 11px;
+}
 
 .modal-form-input {
-  border-radius: 4px;
-  padding: 12px 20px;
+  position: relative;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
   height: 48px;
   background-color: #f2f2f2;
   border: none;
-  color: inherit;
+  border-radius: 4px;
+}
+
+.modal-form-input[type="text"] {
+  min-width: 440px;
+  padding: 12px 20px;
+}
+
+.modal-form-input[type="number"] {
+  width: 110px;
+  text-align: center;
+}
+
+.input-date {
+  width: 100%;
+  background-image: url("../images/icons/date.svg");
+  background-repeat: no-repeat;
+  background-position: center right 20px;
 }
 
 .modal-form-text {
   margin: 0;
-  padding: 0;
+  padding: 3px 0 0 20px;
   font-size: 16px;
   line-height: 21px;
   color: #333333;
-  margin-bottom: 23px;
+  text-align: start;
 }
 
 .text-error {
   color: #ff5757;
+}
+
+.modal-form-count-group {
+  display: flex;
+  position: relative;
+}
+
+.modal-form-label-adult {
+  padding-top: 11px;
+}
+
+
+.count-button {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  width: 20px;
+  height: 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: transparent;
+  color: rgba(117, 97, 87, 0.3);
+  z-index: 1;
+}
+
+.count-button-minus {
+  top: 14px;
+  left: 10px;
+}
+
+.count-button-plus {
+  top: 14px;
+  right: 10px;
+}
+
+.modal-form-label-children {
+  padding: 11px 0 0 4px ;
+  min-width: 119px;
+  display: flex;
+  gap:10px;
+}
+
+.tooltip {
+  position: relative;
+  display: block;
+}
+
+.tooltip-button {
+  display: block;
+  width: 26px;
+  height: 26px;
+  border: none;
+  border-radius: 50%;
+  font-weight: 400;
+  background-color: #83b3d3;
+  color: #ffffff;
+  text-align: center;
+}
+
+.tooltip-text:before {
+  content: url("../images/icons/tooltip-arrow.svg");
+  position: absolute;
+  top: -16px;
+  left: 119px;
+}
+
+.tooltip-text {
+  display: block;
+  position: absolute;
+  z-index: 1;
+  top: 40px;
+  left: -114px;
+  background-color: #333333;
+  border-radius: 10px;
+  width: 256px;
+  min-height: 143px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 19px 18px 14px 22px;
+  color: #ffffff;
+  text-align: start;
+}
+
+.modal-button-submit {
+  width: 100%;
+  min-height: 60px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: uppercase;
+  text-align: center;
 }
