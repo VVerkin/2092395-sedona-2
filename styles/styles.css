@@ -215,6 +215,19 @@ body {
   text-decoration: none;
 }
 
+.navigation-link:hover {
+  opacity: 0.6;
+}
+
+.navigation-link:focus {
+  opacity: 0.6;
+  outline: none;
+}
+
+.navigation-link:active {
+  opacity: 0.3;
+}
+
 .navigation-link-active {
   position: relative;
 }
@@ -227,6 +240,10 @@ body {
   display: block;
   width: 100%;
   border-bottom: 2px solid #756257;
+}
+
+.current-link {
+  pointer-events: none;
 }
 
 .navigation-user {
@@ -892,15 +909,31 @@ body {
 
 .hotels-filter-price {
   display: flex;
-  flex-wrap: wrap;
-  gap: 2px;
-  width: 288px;
+  flex-direction: column;
+  align-items: flex-start;
   margin-right: 70px;
 }
 
+.hotels-price-label-wrapper {
+  display: flex;
+  gap: 2px;
+  width: 288px;
+  margin-bottom: 36px;
+}
+
 .hotels-price-label {
+  position: relative;
   margin: 0;
   padding: 0;
+}
+
+.hotels-price-label span {
+  position: absolute;
+  top: 12px;
+  right: 20px;
+  font-size: 18px;
+  line-height: 24px;
+  opacity: 0.3;
 }
 
 .hotels-price-input {
@@ -909,7 +942,10 @@ body {
   max-width: 143px;
   height: 48px;
   background-color: #f2f2f2;
-  margin-bottom: 20px;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
   outline: none;
 }
 
@@ -919,6 +955,10 @@ body {
 .modal-form-input-count::-webkit-inner-spin-button {
   appearance: none;
   margin: 0;
+}
+
+.hotels-price-input::placeholder {
+  color: transparent;
 }
 
 .hotels-price-input-min {
@@ -1296,7 +1336,7 @@ color: inherit;
 }
 
 .modal-hide {
-  /* display: none; */
+  display: none;
 }
 
 .modal {

@@ -26,7 +26,7 @@
               </a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link" href="catalog.html" aria-current="page">
+              <a class="navigation-link current-link" href="catalog.html" aria-current="page">
                 <span class="navigation-link-active">Гостиницы</span>
               </a>
             </li>
@@ -68,7 +68,7 @@
                 </a>
               </li>
               <li class="breadcrumbs-item">
-                <a class="breadcrumbs-link" href="catalog.html" aria-current="page">Гостиницы</a>
+                <a class="breadcrumbs-link current-link" href="catalog.html" aria-current="page">Гостиницы</a>
               </li>
             </ul>
             <!-- <h2 class="visually-hidden">Список гостиниц с фильтрами</h2> -->
@@ -115,12 +115,16 @@
               </fieldset>
               <fieldset class="hotels-filter-group hotels-filter-price">
                 <legend class="hotels-filter-title">Стоимость, ₽:</legend>
-                <label class="hotels-price-label">
-                  <input class="hotels-price-input hotels-price-input-min" type="number" name="start-price" placeholder="от">
-                </label>
-                <label class="hotels-price-label">
-                  <input class="hotels-price-input hotels-price-input-max" type="number" name="end-price" placeholder="до">
-                </label>
+                <div class="hotels-price-label-wrapper">
+                  <label class="hotels-price-label">
+                    <input class="hotels-price-input hotels-price-input-min" type="number" name="start-price" value="0" placeholder="от">
+                    <span>от</span>
+                  </label>
+                  <label class="hotels-price-label">
+                    <input class="hotels-price-input hotels-price-input-max" type="number" name="end-price" value="9000" placeholder="до">
+                    <span>до</span>
+                  </label>
+                </div>
                 <div class="hotels-price-range">
                   <div class="range-track">
                     <button type="button" class="range-toggle">
@@ -263,7 +267,7 @@
             </ul>
           <ol class="pagination">
             <li class="pagination-item">
-              <a class="pagination-item-link current-page" href="#">1</a>
+              <a class="pagination-item-link current-page current-link" href="#">1</a>
             </li>
             <li class="pagination-item">
               <a class="button button-blue pagination-item-link" href="#">2</a>
