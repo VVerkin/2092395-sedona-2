@@ -1296,7 +1296,7 @@ color: inherit;
 }
 
 .modal-hide {
-  display: none;
+  /* display: none; */
 }
 
 .modal {
@@ -1365,6 +1365,7 @@ color: inherit;
 .modal-form-count-container {
   display: flex;
   justify-content: space-between;
+  gap: 24px;
   flex-wrap: wrap;
 }
 
@@ -1391,6 +1392,21 @@ color: inherit;
   border: none;
   border-radius: 4px;
 }
+
+.modal-form-input:hover {
+  background-color: #e5e5e5;
+}
+
+.modal-form-input:focus {
+  background-color: #e5e5e5;
+  outline: 3px solid  #83b3d3;
+}
+
+.modal-form-input:active {
+  outline: none;
+  background-color: #f2f2f2;
+}
+
 
 .modal-form-input[type="text"] {
   min-width: 440px;
@@ -1431,7 +1447,6 @@ color: inherit;
   padding-top: 11px;
 }
 
-
 .count-button {
   position: absolute;
   margin: 0;
@@ -1442,17 +1457,29 @@ color: inherit;
   border-radius: 4px;
   background-color: transparent;
   color: rgba(117, 97, 87, 0.3);
+  top: 14px;
   z-index: 1;
 }
 
 .count-button-minus {
-  top: 14px;
   left: 10px;
 }
 
 .count-button-plus {
-  top: 14px;
   right: 10px;
+}
+
+
+.count-button:hover {
+  color: #000000;
+}
+
+.count-button:focus {
+  outline: 3px solid #83b3d3;
+}
+
+.count-button:active {
+  outline: none;
 }
 
 .modal-form-label-children {
@@ -1477,12 +1504,21 @@ color: inherit;
   background-color: #83b3d3;
   color: #ffffff;
   text-align: center;
+  outline: none;
 }
 
-.tooltip-text:before {
+.tooltip-button:hover {
+  background-color: #68a2ca;
+}
+
+.tooltip-button:focus {
+  background-color: #68a2ca;
+}
+
+.tooltip-text:after {
   content: url("../images/icons/tooltip-arrow.svg");
   position: absolute;
-  top: -16px;
+  top: -15px;
   left: 119px;
 }
 
@@ -1494,7 +1530,7 @@ color: inherit;
   left: -114px;
   background-color: #333333;
   border-radius: 10px;
-  width: 256px;
+  min-width: 256px;
   min-height: 143px;
   font-weight: 400;
   font-size: 16px;
