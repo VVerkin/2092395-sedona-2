@@ -715,7 +715,7 @@ body {
 }
 
 .breadcrumbs-link:focus {
-  opacity: 0.6;
+  color: #ffffff;
 }
 
 .breadcrumbs-link:active {
@@ -729,6 +729,15 @@ body {
   background-image: url("../images/icons/breadcrumbs-home.svg");
   background-repeat: no-repeat;
   background-position: center bottom;
+}
+
+.breadcrumbs-link-home::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  right: 20px;
+  bottom: -10px;
+  left: -10px;
 }
 
 .hotels-filter-form {
@@ -1234,9 +1243,19 @@ body {
   outline: none;
 }
 
+.pagination-item-link:hover,
+.pagination-item-link:focus{
+  outline: 1px solid #82b3d3;
+  outline-offset: -1px;
+}
+
 .current-page {
   background-color: #f2f2f2;
   color: #000000;
+}
+
+.current-page:focus {
+  outline: none;
 }
 
 .more-page,
@@ -1245,6 +1264,7 @@ body {
 .more-page:active {
   background-color: #ffffff;
   color: #000000;
+  outline: none;
 }
 
 .subscribe-no-bg {
