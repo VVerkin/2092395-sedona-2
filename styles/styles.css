@@ -1485,7 +1485,7 @@ color: inherit;
   display: block;
 }
 
-.tooltip-button {
+.tooltip-toggle {
   display: block;
   width: 26px;
   height: 26px;
@@ -1498,11 +1498,11 @@ color: inherit;
   outline: none;
 }
 
-.tooltip-button:hover {
+.tooltip-toggle:hover {
   background-color: #68a2ca;
 }
 
-.tooltip-button:focus {
+.tooltip-toggle:focus {
   background-color: #68a2ca;
 }
 
@@ -1514,7 +1514,7 @@ color: inherit;
 }
 
 .tooltip-text {
-  display: block;
+  display: none;
   position: absolute;
   z-index: 1;
   top: 40px;
@@ -1529,6 +1529,11 @@ color: inherit;
   padding: 19px 18px 14px 22px;
   color: #ffffff;
   text-align: start;
+}
+
+.tooltip-toggle:hover + .tooltip-text,
+.tooltip-toggle:focus + .tooltip-text {
+  display: block;
 }
 
 .modal-button-submit {
