@@ -529,7 +529,7 @@ input[type="number"]:focus {
 .subscribe-form-input {
   width: 452px;
   min-height: 52px;
-  padding: 12px 0 12px 20px;
+  padding: 12px 20px;
   border-radius: 4px 0 0 4px;
   margin: 0;
   font-family: inherit;
@@ -876,7 +876,7 @@ input[type="number"]:focus {
 
 .hotels-price-input {
   border: none;
-  padding: 12px 21px;
+  padding: 12px 45px 12px 21px;
   width: 143px;
   height: 48px;
   background-color: #f2f2f2;
@@ -886,10 +886,6 @@ input[type="number"]:focus {
   line-height: 24px;
   outline: none;
   transition: all 0.2s ease-in-out;
-}
-
-.hotels-price-input::placeholder {
-  color: transparent;
 }
 
 .hotels-price-input-min {
@@ -1002,7 +998,7 @@ input[type="number"]:focus {
   outline: none;
   appearance: none;
   background-color: #ffffff;
-  background: url('../images/icons/select-arrow.svg') no-repeat right;
+  background: url("../images/icons/select-arrow.svg") no-repeat right;
   background-position-x: calc(100% - 18px);
   transition: all 0.2s ease-in-out;
 }
@@ -1171,17 +1167,13 @@ input[type="number"]:focus {
   justify-content: space-between;
   flex-wrap: wrap;
 }
-
-.hotel-rating {
-  margin: 0;
-}
-
 .hotel-stars {
   width: 140px;
   height: 37px;
   display: flex;
   justify-content: start;
   align-items:center;
+  flex-wrap: wrap;
   gap: 6px;
 }
 
@@ -1195,10 +1187,11 @@ input[type="number"]:focus {
 }
 
 .hotel-rating {
+  margin: 0;
   background-color: #f2f2f2;
   border-radius: 4px;
   width: 140px;
-  height: 37px;
+  min-height: 37px;
   padding: 9px 22px 8px 23px;
   font-size: 16px;
   line-height: 20px;
@@ -1273,7 +1266,7 @@ color: inherit;
 }
 
 .modal-hide {
-  display: none;
+  /* display: none; */
 }
 
 .modal {
@@ -1389,12 +1382,13 @@ color: inherit;
 
 .modal-form-input[type="text"] {
   min-width: 440px;
-  padding: 12px 20px;
+  padding: 12px 60px 12px 20px;
 }
 
 .modal-form-input[type="number"] {
   width: 110px;
   text-align: center;
+  padding: 14px 40px;
 }
 
 .input-date {

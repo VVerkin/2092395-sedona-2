@@ -24,12 +24,12 @@
               <a class="navigation-link" href="#">О Седоне</a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link" href="catalog.html" aria-current="page">Гостиницы</a>
+              <a class="navigation-link" href="catalog.html">Гостиницы</a>
             </li>
           </ul>
           <ul class="reset-list navigation-list navigation-user">
             <li class="navigation-item">
-              <a class="navigation-link navigation-search" href="#" aria-current="page">
+              <a class="navigation-link navigation-search" href="#">
                 <span class="visually-hidden">Поиск</span>
               </a>
             </li>
@@ -115,7 +115,7 @@
           <p class="title search-title">Заинтересовались?</p>
           <p class="search-description">Укажите предполагаемые даты поездки,
             и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-          <button class="button button-brown search-button" type="button">Поиск гостиницы в Седоне</button>
+          <button type="button" class="button button-brown search-button">Поиск гостиницы в Седоне</button>
         </section>
         <section class="subscribe" data-test="subscribe">
           <h2 class="title subscribe-title">Подпишитесь на рассылку</h2>
@@ -123,7 +123,7 @@
           <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
             <label class="visually-hidden" for="subscribe-email">Укажите Ваш email</label>
             <input class="subscribe-form-input" type="email" id="subscribe-email" name="user-email" placeholder="Ваш e-mail" required>
-            <button class="button button-blue button-subscribe" type="submit">Подписаться</button>
+            <button type="submit" class="button button-blue button-subscribe">Подписаться</button>
           </form>
         </section>
       </main>
@@ -187,14 +187,14 @@
               <div class="modal-form-field-wrapper">
                 <label for="date-check-in" class="modal-form-label modal-form-label-data">Дата Заезда:</label>
                 <div class="modal-form-input-group">
-                  <input id="date-check-in" class="modal-form-input input-date" type="text" name="check-in" value="27 апреля 2020" placeholder="Укажите дату" maxlength="30" required>
+                  <input id="date-check-in" class="modal-form-input input-date" type="text" name="check-in" value="27 апреля 2020" placeholder="Укажите дату" required>
                   <p class="modal-form-text text-error">Мы не можем отправить вас в прошлое.</p>
                 </div>
               </div>
               <div class="modal-form-field-wrapper">
                 <label for="date-check-out" class="modal-form-label modal-form-label-data">Дата Выезда:</label>
                 <div class="modal-form-input-group">
-                  <input id="date-check-out" class="modal-form-input input-date" type="text" name="check-out" value="1 сентября 2023" placeholder="Укажите дату" maxlength="30" required>
+                  <input id="date-check-out" class="modal-form-input input-date" type="text" name="check-out" value="1 сентября 2023" placeholder="Укажите дату" required>
                   <p class="modal-form-text">На эти даты есть свободные номера. Пока есть.</p>
                 </div>
               </div>
@@ -202,14 +202,14 @@
                 <div class="modal-form-field-wrapper">
                   <label for="adult-count" class="modal-form-label modal-form-label-adult">Взрослые:</label>
                   <div class="modal-form-count-group">
-                    <button class="count-button count-button-minus" type="button">
+                    <button type="button" class="count-button count-button-minus">
                       <span class="visually-hidden">Уменьшить количество взрослых</span>
                       <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
                         <path fill="currentColor" d="M3 9v2h14V9H3Z"/>
                       </svg>
                     </button>
                     <input id="adult-count" name="adult-count" type="number" class="modal-form-input modal-form-input-count" value="2" min="1" required>
-                    <button class="count-button count-button-plus" type="button">
+                    <button type="button" class="count-button count-button-plus">
                       <span class="visually-hidden">Добавить взрослого</span>
                       <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 20 20">
                         <path fill="currentColor" d="M17 9h-6V3H9v6H3v2h6v6h2v-6h6V9Z"/>
@@ -225,14 +225,14 @@
                     </span>
                   </label>
                   <div class="modal-form-count-group">
-                    <button class="count-button count-button-minus" type="button">
+                    <button type="button" class="count-button count-button-minus">
                       <span class="visually-hidden">Уменьшить количество детей</span>
                       <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
                         <path fill="currentColor" d="M3 9v2h14V9H3Z"/>
                       </svg>
                     </button>
                     <input id="children-count" name="children-count" type="number" class="modal-form-input modal-form-input-count" value="2">
-                    <button class="count-button count-button-plus" type="button">
+                    <button type="button" class="count-button count-button-plus">
                       <span class="visually-hidden">Добавить ребенка</span>
                       <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 20 20">
                         <path fill="currentColor" d="M17 9h-6V3H9v6H3v2h6v6h2v-6h6V9Z"/>
