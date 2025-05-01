@@ -533,12 +533,18 @@ input[type="number"]:focus {
   border-radius: 4px 0 0 4px;
   margin: 0;
   font-family: inherit;
+  font-weight: 700;
   font-size: 18px;
   line-height: 24px;
   color: inherit;
   background-color: #f2f2f2;
   border: none;
   transition: all 0.2s ease-in-out;
+}
+
+.subscribe-form-input::placeholder {
+  font-weight: 400;
+  opacity: 0.6;
 }
 
 .subscribe-form-input:hover {
@@ -903,7 +909,6 @@ input[type="number"]:focus {
 .hotels-price-input:focus {
   background-color: #e5e5e5;
   outline: 3px solid #83b3d3;
-  outline-offset: -3px;
 }
 
 .hotels-price-range {
@@ -1266,7 +1271,7 @@ color: inherit;
 }
 
 .modal-hide {
-  /* display: none; */
+  display: none;
 }
 
 .modal {
@@ -1323,13 +1328,13 @@ color: inherit;
   margin: 0;
   padding: 0;
   border: none;
-  margin-bottom: 46px;
+  margin-bottom: 47px;
 }
 
 .modal-form-field-wrapper {
   display: flex;
   justify-content: space-between;
-  gap: 18px;
+  gap: 15px;
   flex-wrap: wrap;
 }
 
@@ -1340,7 +1345,14 @@ color: inherit;
   flex-wrap: wrap;
 }
 
+.modal-form-label-wrapper {
+  display: flex;
+  gap: 10px;
+  min-width: 119px;
+}
+
 .modal-form-label {
+  padding-top: 12px;
   min-width: 119px;
   font-weight: 700;
   font-size: 20px;
@@ -1348,8 +1360,12 @@ color: inherit;
   text-align: start;
 }
 
-.modal-form-label-data {
-  padding-top: 11px;
+.modal-form-label-adult {
+  min-width: 122px;
+}
+
+.modal-form-label-children {
+  min-width: 49px;
 }
 
 .modal-form-input {
@@ -1379,16 +1395,15 @@ color: inherit;
   background-color: #f2f2f2;
 }
 
-
 .modal-form-input[type="text"] {
   min-width: 440px;
-  padding: 12px 60px 12px 20px;
+  padding: 13px 60px 11px 20px;
 }
 
 .modal-form-input[type="number"] {
   width: 110px;
   text-align: center;
-  padding: 14px 40px;
+  padding: 0 40px;
 }
 
 .input-date {
@@ -1416,10 +1431,6 @@ color: inherit;
   position: relative;
 }
 
-.modal-form-label-adult {
-  padding-top: 11px;
-}
-
 .count-button {
   position: absolute;
   margin: 0;
@@ -1439,9 +1450,8 @@ color: inherit;
 }
 
 .count-button-plus {
-  right: 10px;
+  right: 11px;
 }
-
 
 .count-button:hover {
   color: #000000;
@@ -1455,16 +1465,10 @@ color: inherit;
   outline: none;
 }
 
-.modal-form-label-children {
-  padding: 11px 0 0 4px ;
-  min-width: 119px;
-  display: flex;
-  gap: 10px;
-}
-
 .tooltip {
   position: relative;
   display: block;
+  top: 9px;
 }
 
 .tooltip-toggle {
@@ -1508,6 +1512,7 @@ color: inherit;
 }
 
 .modal-button-submit {
+  border-radius: 10px;
   width: 100%;
   min-height: 60px;
   font-weight: 700;
