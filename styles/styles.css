@@ -1459,10 +1459,12 @@ color: inherit;
 
 .count-button:focus-visible {
   outline: 3px solid #83b3d3;
+  color: #000000;
 }
 
 .count-button:active {
   outline: none;
+  color: rgba(117, 97, 87, 0.3);
 }
 
 .tooltip {
